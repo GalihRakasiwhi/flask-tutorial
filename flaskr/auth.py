@@ -63,7 +63,7 @@ def login():
             session.clear()
             session['user_id'] = user['id']
             #return redirect(url_for('index'))
-            return 'Hello world!'
+            return redirect(url_for('index'))
 
         flash(error)
 
